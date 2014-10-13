@@ -3,7 +3,6 @@ package com.johnmarinelli.cryptorally;
 import com.johnmarinelli.cryptorally.Utilities;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -17,7 +16,7 @@ public class ShiftCipherActivity extends CipherActivity {
 		in = in.toUpperCase();
 		
 		String decrypted = "";
-		Log.i("key", Integer.toString(key));
+		
 		for(char c : in.toCharArray()) {
 			/* ((go from 65-90 to 0-25) + key) % 26*/
 			int shiftAmt = ((c - Utilities.ASCII_CHAR_MIN) + key) % 26; 
@@ -37,8 +36,8 @@ public class ShiftCipherActivity extends CipherActivity {
 		mEncryptionKey.setMinValue(0);
 		mEncryptionKey.setMaxValue(25);
 		
-		Utilities.addViewToLayout(mEncryptionKey, 
-				(LinearLayout) findViewById(R.id.shift_cipher_layout));		
+		Utilities.addViewsToLayout((LinearLayout) findViewById(R.id.cipher_layout),
+				mEncryptionKey);		
 	}
 	
 	@SuppressLint("NewApi")

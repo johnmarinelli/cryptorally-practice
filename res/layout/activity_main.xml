@@ -9,9 +9,18 @@
     tools:context="com.johnmarinelli.cryptorally.MainActivity" >
 
 	<Button
+	    android:id="@+id/shift_cipher_button"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
 	    android:text="Caesar Cipher"
 	    android:onClick="startShiftCipher" />
+		
+	<Button
+	    android:id="@+id/affine_cipher_button"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/shift_cipher_button"
+	    android:text="Affine Cipher"
+	    android:onClick="startAffineCipher" />
 
 </RelativeLayout>

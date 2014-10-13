@@ -22,10 +22,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
         <activity
             android:name=".ShiftCipherActivity"
             android:label="Shift Cipher" >
+        </activity>
+        <activity
+            android:name=".AffineCipherActivity"
+            android:label="@string/title_activity_affine_cipher" >
         </activity>
     </application>
 
