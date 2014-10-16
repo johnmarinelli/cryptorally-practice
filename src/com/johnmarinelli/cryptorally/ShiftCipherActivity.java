@@ -43,7 +43,6 @@ public class ShiftCipherActivity extends CipherActivity {
 	@SuppressLint("NewApi")
 	@Override
 	public void decrypt(View v) {
-		mInput = (EditText) findViewById(R.id.cipher_input);
 		String res = decrypt(mInput.getText().toString(), mEncryptionKey.getValue());
 		mOutput = (TextView) findViewById(R.id.cipher_output);
 		mOutput.setText(res);

@@ -14,6 +14,8 @@ abstract class CipherActivity extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_cipher);
+		
+		mInput = (EditText) findViewById(R.id.cipher_input);
 	}
 	
 	abstract void decrypt(View v);

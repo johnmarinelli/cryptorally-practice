@@ -72,7 +72,6 @@ public class AffineCipherActivity extends CipherActivity {
 	@SuppressLint("NewApi")
 	@Override
 	public void decrypt(View v) {
-		mInput = (EditText) findViewById(R.id.cipher_input);
 		String in = mInput.getText().toString();
 		
 		int x = mEncryptLeftVal.getValue();

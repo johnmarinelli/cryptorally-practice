@@ -12,6 +12,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Utilities.init();
         setContentView(R.layout.activity_main);
     }
 
@@ -41,6 +42,11 @@ public class MainActivity extends ActionBarActivity {
     
     public void startAffineCipher(View v) {
     	Intent intent = new Intent(this, AffineCipherActivity.class);
+    	startActivity(intent);
+    }
+    
+    public void startVigenereCipher(View v) {
+    	Intent intent = new Intent(this, VigenereCipherActivity.class);
     	startActivity(intent);
     }
 }

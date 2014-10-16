@@ -22,5 +22,13 @@
 	    android:layout_below="@id/shift_cipher_button"
 	    android:text="Affine Cipher"
 	    android:onClick="startAffineCipher" />
+	
+	<Button
+	    android:id="@+id/vigenere_cipher_button"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/affine_cipher_button"
+	    android:text="Vigenere Cipher"
+	    android:onClick="startVigenereCipher" />
 
 </RelativeLayout>
