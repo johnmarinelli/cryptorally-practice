@@ -30,5 +30,13 @@
 	    android:layout_below="@id/affine_cipher_button"
 	    android:text="Vigenere Cipher"
 	    android:onClick="startVigenereCipher" />
+	
+	<Button
+	    android:id="@+id/railfence_cipher_button"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/vigenere_cipher_button"
+	    android:text="Rail Fence Cipher"
+	    android:onClick="startRailFenceCipher" />
 
 </RelativeLayout>

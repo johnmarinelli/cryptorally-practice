@@ -13,9 +13,8 @@ public class ShiftCipherActivity extends CipherActivity {
 	NumberPicker mEncryptionKey;
 	
 	private String decrypt(String in, int key) {
-		in = in.toUpperCase();
-		
 		String decrypted = "";
+		in = Utilities.sanitizeString(in);
 		
 		for(char c : in.toCharArray()) {
 			/* ((go from 65-90 to 0-25) + key) % 26*/
@@ -44,7 +43,6 @@ public class ShiftCipherActivity extends CipherActivity {
 	@Override
 	public void decrypt(View v) {
 		String res = decrypt(mInput.getText().toString(), mEncryptionKey.getValue());
-		mOutput = (TextView) findViewById(R.id.cipher_output);
 		mOutput.setText(res);
 	}
 

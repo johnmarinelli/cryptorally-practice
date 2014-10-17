@@ -49,4 +49,9 @@ public class MainActivity extends ActionBarActivity {
     	Intent intent = new Intent(this, VigenereCipherActivity.class);
     	startActivity(intent);
     }
+    
+    public void startRailFenceCipher(View v) {
+    	Intent intent = new Intent(this, RailFenceCipherActivity.class);
+    	startActivity(intent);
+    }
 }

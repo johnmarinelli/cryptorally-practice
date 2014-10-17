@@ -16,6 +16,7 @@ abstract class CipherActivity extends ActionBarActivity {
 		setContentView(R.layout.activity_cipher);
 		
 		mInput = (EditText) findViewById(R.id.cipher_input);
+		mOutput = (TextView) findViewById(R.id.cipher_output);
 	}
 	
 	abstract void decrypt(View v);

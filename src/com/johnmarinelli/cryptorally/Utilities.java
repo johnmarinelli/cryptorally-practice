@@ -37,8 +37,7 @@ public final class Utilities {
 		}
 	}
 	
-	public static int greatestCommonDivisor(int a, int b)
-	{
+	public static int greatestCommonDivisor(int a, int b) {
 		int remainder = a % b;
 		
 		if(remainder == 0){
@@ -49,11 +48,17 @@ public final class Utilities {
 		}
 	}
 	
-	public static int getModularInv(int a, int n)
-	{
+	public static int getModularInv(int a, int n) {
 		BigInteger res = BigInteger.valueOf(a).modInverse(BigInteger.valueOf(n));
 		
 		return res.intValue();
+	}
+	
+	/*
+	 * remove whitespace, and capitalize string
+	 */
+	public static String sanitizeString(String in) {
+		return in.toUpperCase().replaceAll("\\s+", "");
 	}
 
 }

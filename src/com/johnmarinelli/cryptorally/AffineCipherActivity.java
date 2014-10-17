@@ -22,7 +22,7 @@ public class AffineCipherActivity extends CipherActivity {
 	
 	private String decrypt(String in, OrderedPair<Integer, Integer> ekey) {
 		String decrypted = "";
-		in = in.toUpperCase();
+		in = Utilities.sanitizeString(in);
 		
 		int dX = Utilities.getModularInv(ekey.getX(), Utilities.ALPHABET_LENGTH);
 		int dY = (dX * (Utilities.ALPHABET_LENGTH - ekey.getY())) % Utilities.ALPHABET_LENGTH;
