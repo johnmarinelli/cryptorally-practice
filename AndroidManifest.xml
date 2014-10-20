@@ -38,6 +38,10 @@
             android:name=".RailFenceCipherActivity"
             android:label="Rail Fence Cipher" >
         </activity>
+        <activity
+            android:name=".CTCipherActivity"
+            android:label="Columnar Transposition Cipher" >
+        </activity>
     </application>
 
 </manifest>

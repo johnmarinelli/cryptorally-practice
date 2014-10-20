@@ -54,4 +54,9 @@ public class MainActivity extends ActionBarActivity {
     	Intent intent = new Intent(this, RailFenceCipherActivity.class);
     	startActivity(intent);
     }
+    
+    public void startCTCipher(View v) {
+    	Intent intent = new Intent(this, CTCipherActivity.class);
+    	startActivity(intent);
+    }
 }

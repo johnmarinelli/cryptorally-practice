@@ -18,11 +18,6 @@ public class VigenereCipherActivity extends CipherActivity {
 		String decrypted = "";
 		input = Utilities.sanitizeString(input);
 		key = Utilities.sanitizeString(key);
-		/*input = input.toUpperCase();
-		input = input.replaceAll("\\s+","");
-		
-		key = key.toUpperCase();
-		key = key.replaceAll("\\s+", "");*/
 		
 		int inLength = input.length(), keyLength = key.length();
 		

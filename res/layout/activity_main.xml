@@ -38,5 +38,13 @@
 	    android:layout_below="@id/vigenere_cipher_button"
 	    android:text="Rail Fence Cipher"
 	    android:onClick="startRailFenceCipher" />
+	
+	<Button
+	    android:id="@+id/ct_cipher_button"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/railfence_cipher_button"
+	    android:text="Columnar Transposition Cipher"
+	    android:onClick="startCTCipher" />
 
 </RelativeLayout>
