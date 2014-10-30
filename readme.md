@@ -1,1 +1,1 @@
-Fun fact: I would rather claw my eyes out than work with Eclipse SDK on Linux (or ever) again
+this was for asu cryptorally 2014 but i didnt end up going.  (ps i would have totally won)
